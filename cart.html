@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaMall</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="webimage/logo.png" alt="">
+
+        <div id="search-bar">
+            <input id="search" type="text" placeholder="Search Products">
+            <img id="img-search" src="webimage/search_40dp_B9B5B5_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+        </div>
+
+        <ul class="sidebar">  
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="About-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li id="close" onclick="hideSidebar()"><img src="webimage/close_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></li>
+        </ul>
+
+
+        <div id="info">
+            <img id="img-info"  src="webimage/login_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+
+            <a style="text-decoration: none;" href="cart.html"><img id="img-info" class="icon-cart" src="webimage/shopping_cart_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+            <button id="info-btn">0</button></a>
+
+            <img id="img-info" onclick="showSidebar()" src="webimage/menu_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+        </div>
+    </div>
+
+    <div id="main-page">
+        <img id="menu-icon" src="webimage/visibility_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        <img id="close-icon" src="webimage/visibility_off_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Close Icon">
+
+        <div id="buttons">
+            <a id="a1"  href="#">Deals</a>
+            <a id="a2" href="#">Brands</a>
+            <a id="a3" href="#">New</a>
+            <a id="a4" href="#">Men</a>
+            <a id="a5" href="#">Women</a>
+            <a id="a6" href="#">Kids</a>
+            <a id="a7" href="#">Sneakers</a>
+            <a id="a8" href="#">Shoes</a>
+            <a id="a9" href="#">Apparel</a>
+            <a id="a10" href="#">Accessories</a>
+            <a id="a11" href="#">More Categories</a>
+        </div>
+
+        <div id="main-page-cart">
+            <p id="main-page-cart-p1">Product</p>
+            <p id="main-page-cart-p2">Price</p>
+            <p id="main-page-cart-p3">Quantity</p>
+        </div>
+
+        <div id="main-page-total-price">
+            <p id="main-page-total-price-p1">Order total</p>
+
+            <p id="main-page-total-price-p2">discount code</p>
+            <input type="text" id="main-page-total-price-input1" placeholder="Write the code here">
+            <button id="main-page-total-price-btn1">Apply</button>
+
+            <p id="main-page-total-price-p3">Gift Cards / Vouchers</p>
+            <input type="text" id="main-page-total-price-input2" placeholder="Write the code here">
+            <button id="main-page-total-price-btn2">Apply</button>
+
+            <div id="order-price-container">Total: <span id="total-price-value">€150.00</span></div>
+            <button id="main-page-total-price-btn3">Check Out</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p id="footer-text1">NovaMall: Your Gateway to the Future of Shopping!</p>
+
+        <div id="footer-section1">
+            <P id="footer-section1-p1">About</P>
+
+            <P id="footer-section1-p2">How It Works</P>
+            <P id="footer-section1-p2">Verification</P>
+            <P id="footer-section1-p2">Newsroom</P>
+            <P id="footer-section1-p2">Company</P>
+            <P id="footer-section1-p2">Careers</P>
+            <P id="footer-section1-p2">NovaMall Reviews</P>
+        </div>
+
+        <div id="footer-section2">
+            <P id="footer-section1-p1">Help</P>
+
+            <P id="footer-section1-p2">Help Center</P>
+            <P id="footer-section1-p2">Contact US</P>
+            <P id="footer-section1-p2">Product Suggestion</P>
+            <P id="footer-section1-p2">Sizes</P>
+        </div>
+
+        <div id="footer-section3">
+            <P id="footer-section1-p1">Sell</P>
+
+            <P id="footer-section1-p2">Selling Guide</P>
+            <P id="footer-section1-p2">Profesional Tools</P>
+            <P id="footer-section1-p2">NovaMall Pro</P>
+            <P id="footer-section1-p2">Locations</P>
+        </div>
+
+        <div id="footer-section4">
+            <P id="footer-section1-p1">Air Jordan</P>
+
+            <P id="footer-section1-p2">Air Jordan 1</P>
+            <P id="footer-section1-p2">Air Jordan 3</P>
+            <P id="footer-section1-p2">Air Jordan 4</P>
+            <P id="footer-section1-p2">Air Jordan 11</P>
+            <P id="footer-section1-p2">Women's Jordan Shoes</P>
+            <P id="footer-section1-p2">Air Jordan 5</P>
+        </div>
+
+
+        <div id="footer-section5">
+            <P id="footer-section1-p1">Adidas</P>
+
+            <P id="footer-section1-p2">Adidas Samba</P>
+            <P id="footer-section1-p2">Adidas Campus</P>
+            <P id="footer-section1-p2">Adidas Gazelle</P>
+            <P id="footer-section1-p2">Adidas Yeezy</P>
+        </div> 
+
+
+        <div id="footer-section6">
+            <P id="footer-section1-p1">New Balance</P>
+
+            <P id="footer-section1-p2">New Balance 2002R</P>
+            <P id="footer-section1-p2">New Balance 1906R</P>
+            <P id="footer-section1-p2">New Balance 530</P>
+            <P id="footer-section1-p2">New Balance 550</P>
+            <P id="footer-section1-p2">New Balance 9060</P>
+            <P id="footer-section1-p2">New Balance 990 V1</P>
+        </div>
+
+        <!------------------------------------------------------>
+
+        <div id="footer-section7">
+            <P id="footer-section1-p1">Nike</P>
+
+            <P id="footer-section1-p2">Nike Air Force 1</P>
+            <P id="footer-section1-p2">Nike Air Max 1</P>
+            <P id="footer-section1-p2">Nike Dunk</P>
+            <P id="footer-section1-p2">Nike SB</P>
+            <P id="footer-section1-p2">Womens's Nike Dunk</P>
+            <P id="footer-section1-p2">Nike Vomero 5</P>
+        </div>
+
+
+        <div id="footer-section8">
+            <P id="footer-section1-p1">Crocs</P>
+
+            <P id="footer-section1-p2">Classic Clog</P>
+            <P id="footer-section1-p2">Classic Cozzy</P>
+            <P id="footer-section1-p2">Echo Clog</P>
+            <P id="footer-section1-p2">Mega Crush</P>
+            <P id="footer-section1-p2">Pollex Clog</P>
+            <P id="footer-section1-p2">Pollex Slide</P>
+        </div>
+
+
+        <div id="footer-section9">
+            <P id="footer-section1-p1">Appareal</P>
+
+            <P id="footer-section1-p2">Denim Tears</P>
+            <P id="footer-section1-p2">Fear of God Essentials</P>
+            <P id="footer-section1-p2">Nike Apparel</P>
+            <P id="footer-section1-p2">Supreme</P>
+            <P id="footer-section1-p2">Travis Scott</P>
+            <P id="footer-section1-p2">Yeezy</P>
+        </div>
+
+        <div id="footer-section10">
+            <P id="footer-section1-p1">Accessories</P>
+
+            <P id="footer-section1-p2">Swatch X Omega</P>
+            <P id="footer-section1-p2">Stanley</P>
+            <P id="footer-section1-p2">Designer Sunglasses</P>
+            <P id="footer-section1-p2">Louis Vuitton Accessories</P>
+            <P id="footer-section1-p2">Gucci Accessories</P>
+        </div>
+
+        <img id="download" src="webimage/download.png" alt="">
+
+        <button id="footer-button1">Kosovo  |  English  |  € EUR</button>
+        
+        <p id="footer-rights">© 2024 NovaMall. All rights reserved. <br>
+            Unauthorized duplication, or use of any content from this website is strictly prohibited.</p>
+
+        <a href="https://instagram.com/"><p id="social-media-p1"><i class="fab fa-instagram"></i></p></a>
+        <a href="https://www.facebook.com/"><p id="social-media-p2"><i class="fab fa-facebook"></i></p></a>
+        <a href="https://twitter.com/?lang=en"><p id="social-media-p3"><i class="fab fa-twitter"></i></p></a>
+        <a href="https://www.linkedin.com/"><p id="social-media-p4"><i class="fab fa-linkedin"></i></p></a>
+    </div> 
+    
+
+
+    <script>
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+
+    // Function to show the sidebar
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+
+    document.getElementById('menu-icon').addEventListener('click', function () {
+        const buttonsDiv = document.getElementById('buttons');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        buttonsDiv.style.display = 'flex'; // Show the #buttons div
+        menuIcon.style.display = 'none';  // Hide the menu icon
+        closeIcon.style.display = 'block'; // Show the close icon
+        });
+
+        document.getElementById('close-icon').addEventListener('click', function () {
+        const buttonsDiv = document.getElementById('buttons');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        buttonsDiv.style.display = 'none'; // Hide the #buttons div
+        menuIcon.style.display = 'block'; // Show the menu icon
+        closeIcon.style.display = 'none';  // Hide the close icon
+        });
+
+
+    const cartSection = document.querySelector('#main-page-cart'); // Main container
+    const totalPriceElement = document.querySelector('#main-page-total-price'); // Total price container
+    const cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+    const cartCountButton = document.querySelector('#info-btn'); // Cart count button
+
+    // Initialize the cart count
+    let cartCount = cartData.length;
+    cartCountButton.textContent = cartCount; // Set initial value on page load
+
+    function renderCart() {
+        cartSection.innerHTML = ''; // Clear the section for fresh rendering
+
+        cartData.forEach((item, index) => {
+            // Create a container for each cart item
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+
+            // Add product details, quantity input, and remove button
+            cartItem.innerHTML = `
+                <div class="cart-item-details">
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                    <p class="cart-item-name">${item.name}</p>
+                </div>
+                <p class="cart-item-price" data-base-price="${item.price.replace('€', '')}">€${item.price.replace('€', '')}</p>
+                <input type="number" class="cart-item-quantity" value="1" min="1" data-index="${index}">
+                <button class="remove-btn" data-index="${index}">Remove</button>
+            `;
+
+            cartSection.appendChild(cartItem);
+        });
+
+        // Attach event listeners to quantity inputs
+        document.querySelectorAll('.cart-item-quantity').forEach(input => {
+            input.addEventListener('input', updatePriceAndTotal);
+        });
+
+        // Attach event listeners to remove buttons
+        document.querySelectorAll('.remove-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const index = e.target.getAttribute('data-index');
+                removeItem(index);
+            });
+        });
+
+        // Update the total price initially
+        updateTotalPrice();
+    }
+
+    function updatePriceAndTotal(e) {
+        const quantity = parseInt(e.target.value);
+        const index = e.target.getAttribute('data-index');
+        const cartItem = cartData[index];
+        const basePrice = parseFloat(cartItem.price.replace('€', '')); // Get the base price
+        const newPrice = basePrice * quantity;
+
+        // Update the price displayed for the item
+        const priceElement = e.target.closest('.cart-item').querySelector('.cart-item-price');
+        priceElement.textContent = `€${newPrice.toFixed(2)}`;
+
+        // Update the total price
+        updateTotalPrice();
+    }
+
+    function updateTotalPrice() {
+    let total = 0;
+
+    // Calculate total based on each item's displayed price and quantity
+    document.querySelectorAll('.cart-item').forEach(cartItem => {
+        const priceElement = cartItem.querySelector('.cart-item-price');
+        const price = parseFloat(priceElement.textContent.replace('€', ''));
+        total += price;
+    });
+
+    // Update the total price in the dedicated container
+    const totalPriceValueElement = document.querySelector('#total-price-value');
+    totalPriceValueElement.textContent = `€${total.toFixed(2)}`;
+}
+
+    function removeItem(index) {
+        // Remove the item from cartData array
+        cartData.splice(index, 1);
+
+        // Update localStorage with modified cartData
+        localStorage.setItem('cartData', JSON.stringify(cartData));
+
+        // Update the cart count and button value
+        cartCount = cartData.length;
+        cartCountButton.textContent = cartCount;
+
+        // Re-render the cart
+        renderCart();
+    }
+
+    // Initial render
+    renderCart();
+
+    function applyDiscount() {
+    const discountInput = document.querySelector('#main-page-total-price-input1');
+    const discountCode = discountInput.value.trim();
+
+    // Check if the discount code matches "MelosGrainca"
+    if (discountCode === "MelosGrainca") {
+        let total = 0;
+
+        // Calculate the total before discount
+        document.querySelectorAll('.cart-item').forEach(cartItem => {
+            const priceElement = cartItem.querySelector('.cart-item-price');
+            const price = parseFloat(priceElement.textContent.replace('€', ''));
+            total += price;
+        });
+
+        // Apply a 50% discount
+        const discountedTotal = total / 2;
+
+        // Update the total price in the dedicated container
+        const totalPriceValueElement = document.querySelector('#total-price-value');
+        totalPriceValueElement.textContent = `€${discountedTotal.toFixed(2)}`;
+
+        // Provide feedback to the user
+        alert('Discount applied! Your total has been reduced by 50%.');
+    } else {
+        // Provide feedback for an invalid code
+        alert('Invalid discount code. Please try again.');
+    }
+
+    // Clear the discount input
+    discountInput.value = '';
+}
+
+// Add event listener for the "Apply" button
+document.querySelector('#main-page-total-price-btn1').addEventListener('click', applyDiscount);
+
+    
+</script>
+</body>
+</html>

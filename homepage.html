@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaMall</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="webimage/logo.png" alt="">
+
+        <div id="search-bar">
+            <input id="search" type="text" placeholder="Search Products">
+            <img id="img-search" src="webimage/search_40dp_B9B5B5_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+        </div>
+
+        <ul class="sidebar">  
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="About-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li id="close" onclick="hideSidebar()"><img src="webimage/close_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></li>
+        </ul>
+
+
+        <div id="info">
+            <img id="img-info"  src="webimage/login_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+
+            <a style="text-decoration: none;" href="cart.html"><img id="img-info" class="icon-cart" src="webimage/shopping_cart_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></a>
+
+            <img id="img-info" onclick="showSidebar()" src="webimage/menu_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+        </div>
+    </div>
+
+    <div id="main-page">
+        <img id="menu-icon" src="webimage/visibility_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        <img id="close-icon" src="webimage/visibility_off_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Close Icon">
+
+        <div id="buttons">
+            <a id="a1"  href="#">Deals</a>
+            <a id="a2" href="#">Brands</a>
+            <a id="a3" href="#">New</a>
+            <a id="a4" href="#">Men</a>
+            <a id="a5" href="#">Women</a>
+            <a id="a6" href="#">Kids</a>
+            <a id="a7" href="#">Sneakers</a>
+            <a id="a8" href="#">Shoes</a>
+            <a id="a9" href="#">Apparel</a>
+            <a id="a10" href="#">Accessories</a>
+            <a id="a11" href="#">More Categories</a>
+        </div>
+
+        <p id="main-page-title">NovaMall</p>
+        <p id="main-page-description">is a versatile e-commerce platform offering quality products at great prices, with a focus on convenience and exceptional customer service.</p>
+
+        <p id="main-page-text">Recommended For You </p>
+
+        <div id="photo1">
+            <img id="shoe1" src="webimage/shoe1.avif" alt="">
+            <p id="photo1-text">Nike SB Dunk High New York Mets</p>
+            <p id="photo1-price">€77</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo2">
+            <img id="shoe1" src="webimage/shoe2.avif" alt="">
+            <p id="photo1-text">adidas Yeezy Slide Onyx</p>
+            <p id="photo1-price">€60</p>
+            <button id="photo1-btn" >Add to cart</button>
+        </div>
+
+        <div id="photo3">
+            <img id="shoe1" src="webimage/shirt1.avif" alt="">
+            <p id="photo1-text">Kith Mike Tyson Vintage Tee Black</p>
+            <p id="photo1-price">€111</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo4">
+            <img id="shoe1" src="webimage/controller1.avif" alt="">
+            <p id="photo1-text">Playstation PS5 DualSense 30th...</p>
+            <p id="photo1-price">€97</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo5">
+            <img id="shoe1" src="webimage/sweatshirt1.avif" alt="">
+            <p id="photo1-text">Supreme Kate Moss Sweatshirt</p>
+            <p id="photo1-price">€208</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo6">
+            <img id="shoe1" src="webimage/shoe3.avif" alt="">
+            <p id="photo1-text">New Balance 990v1 MiUSA</p>
+            <p id="photo1-price">€90</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div> 
+
+        <hr id="hr">
+
+        <p id="main-page-text2">New Collection</p>
+
+        <div id="photo7">
+            <img id="shoe1" src="webimage/shoe4.avif" alt="">
+            <p id="photo1-text">Jordan 1 Retro Low OG Game Royal</p>
+            <p id="photo1-price">€104</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo8">
+            <img id="shoe1" src="webimage/shoe5.avif" alt="">
+            <p id="photo1-text">Jordan 1 Retro Low OG Mocha</p>
+            <p id="photo1-price">€90</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo9">
+            <img id="shoe1" src="webimage/shirt2.avif" alt="">
+            <p id="photo1-text">Kith x Batman Dark Knight International</p>
+            <p id="photo1-price">€104</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo10">
+            <img id="shoe1" src="webimage/shirt3.avif" alt="">
+            <p id="photo1-text">Kith x Batman Joker Tee Whitel</p>
+            <p id="photo1-price">€100</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo11">
+            <img id="shoe1" src="webimage/hat1.avif" alt="">
+            <p id="photo1-text">Palace Gore-Tex Dog Ear 6-Panel</p>
+            <p id="photo1-price">€150</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo12">
+            <img id="shoe1" src="webimage/poker-set1.avif" alt="">
+            <p id="photo1-text">Kith x Batman Poker Set</p>
+            <p id="photo1-price">€559</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>  
+    </div>
+
+    <div id="footer">
+        <p id="footer-text1">NovaMall: Your Gateway to the Future of Shopping!</p>
+
+        <div id="footer-section1">
+            <P id="footer-section1-p1">About</P>
+
+            <P id="footer-section1-p2">How It Works</P>
+            <P id="footer-section1-p2">Verification</P>
+            <P id="footer-section1-p2">Newsroom</P>
+            <P id="footer-section1-p2">Company</P>
+            <P id="footer-section1-p2">Careers</P>
+            <P id="footer-section1-p2">NovaMall Reviews</P>
+        </div>
+
+        <div id="footer-section2">
+            <P id="footer-section1-p1">Help</P>
+
+            <P id="footer-section1-p2">Help Center</P>
+            <P id="footer-section1-p2">Contact US</P>
+            <P id="footer-section1-p2">Product Suggestion</P>
+            <P id="footer-section1-p2">Sizes</P>
+        </div>
+
+        <div id="footer-section3">
+            <P id="footer-section1-p1">Sell</P>
+
+            <P id="footer-section1-p2">Selling Guide</P>
+            <P id="footer-section1-p2">Profesional Tools</P>
+            <P id="footer-section1-p2">NovaMall Pro</P>
+            <P id="footer-section1-p2">Locations</P>
+        </div>
+
+        <div id="footer-section4">
+            <P id="footer-section1-p1">Air Jordan</P>
+
+            <P id="footer-section1-p2">Air Jordan 1</P>
+            <P id="footer-section1-p2">Air Jordan 3</P>
+            <P id="footer-section1-p2">Air Jordan 4</P>
+            <P id="footer-section1-p2">Air Jordan 11</P>
+            <P id="footer-section1-p2">Women's Jordan Shoes</P>
+            <P id="footer-section1-p2">Air Jordan 5</P>
+        </div>
+
+
+        <div id="footer-section5">
+            <P id="footer-section1-p1">Adidas</P>
+
+            <P id="footer-section1-p2">Adidas Samba</P>
+            <P id="footer-section1-p2">Adidas Campus</P>
+            <P id="footer-section1-p2">Adidas Gazelle</P>
+            <P id="footer-section1-p2">Adidas Yeezy</P>
+        </div> 
+
+
+        <div id="footer-section6">
+            <P id="footer-section1-p1">New Balance</P>
+
+            <P id="footer-section1-p2">New Balance 2002R</P>
+            <P id="footer-section1-p2">New Balance 1906R</P>
+            <P id="footer-section1-p2">New Balance 530</P>
+            <P id="footer-section1-p2">New Balance 550</P>
+            <P id="footer-section1-p2">New Balance 9060</P>
+            <P id="footer-section1-p2">New Balance 990 V1</P>
+        </div>
+
+        <!------------------------------------------------------>
+
+        <div id="footer-section7">
+            <P id="footer-section1-p1">Nike</P>
+
+            <P id="footer-section1-p2">Nike Air Force 1</P>
+            <P id="footer-section1-p2">Nike Air Max 1</P>
+            <P id="footer-section1-p2">Nike Dunk</P>
+            <P id="footer-section1-p2">Nike SB</P>
+            <P id="footer-section1-p2">Womens's Nike Dunk</P>
+            <P id="footer-section1-p2">Nike Vomero 5</P>
+        </div>
+
+
+        <div id="footer-section8">
+            <P id="footer-section1-p1">Crocs</P>
+
+            <P id="footer-section1-p2">Classic Clog</P>
+            <P id="footer-section1-p2">Classic Cozzy</P>
+            <P id="footer-section1-p2">Echo Clog</P>
+            <P id="footer-section1-p2">Mega Crush</P>
+            <P id="footer-section1-p2">Pollex Clog</P>
+            <P id="footer-section1-p2">Pollex Slide</P>
+        </div>
+
+
+        <div id="footer-section9">
+            <P id="footer-section1-p1">Appareal</P>
+
+            <P id="footer-section1-p2">Denim Tears</P>
+            <P id="footer-section1-p2">Fear of God Essentials</P>
+            <P id="footer-section1-p2">Nike Apparel</P>
+            <P id="footer-section1-p2">Supreme</P>
+            <P id="footer-section1-p2">Travis Scott</P>
+            <P id="footer-section1-p2">Yeezy</P>
+        </div>
+
+        <div id="footer-section10">
+            <P id="footer-section1-p1">Accessories</P>
+
+            <P id="footer-section1-p2">Swatch X Omega</P>
+            <P id="footer-section1-p2">Stanley</P>
+            <P id="footer-section1-p2">Designer Sunglasses</P>
+            <P id="footer-section1-p2">Louis Vuitton Accessories</P>
+            <P id="footer-section1-p2">Gucci Accessories</P>
+        </div>
+
+        <img id="download" src="webimage/download.png" alt="">
+
+        <button id="footer-button1">Kosovo  |  English  |  € EUR</button>
+        
+        <p id="footer-rights">© 2024 NovaMall. All rights reserved. <br>
+            Unauthorized duplication, or use of any content from this website is strictly prohibited.</p>
+
+        <a href="https://instagram.com/"><p id="social-media-p1"><i class="fab fa-instagram"></i></p></a>
+        <a href="https://www.facebook.com/"><p id="social-media-p2"><i class="fab fa-facebook"></i></p></a>
+        <a href="https://twitter.com/?lang=en"><p id="social-media-p3"><i class="fab fa-twitter"></i></p></a>
+        <a href="https://www.linkedin.com/"><p id="social-media-p4"><i class="fab fa-linkedin"></i></p></a>
+    </div> 
+
+
+
+    <script>
+        function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+    
+            // Function to show the sidebar
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+    
+    
+    
+            document.getElementById('menu-icon').addEventListener('click', function () {
+            const buttonsDiv = document.getElementById('buttons');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+    
+            buttonsDiv.style.display = 'flex'; // Show the #buttons div
+            menuIcon.style.display = 'none';  // Hide the menu icon
+            closeIcon.style.display = 'block'; // Show the close icon
+            });
+    
+            document.getElementById('close-icon').addEventListener('click', function () {
+            const buttonsDiv = document.getElementById('buttons');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+    
+            buttonsDiv.style.display = 'none'; // Hide the #buttons div
+            menuIcon.style.display = 'block'; // Show the menu icon
+            closeIcon.style.display = 'none';  // Hide the close icon
+            });
+    
+    
+    
+            const cartCountButton = document.querySelector('#info-btn');
+        let cartCount = 0;
+    
+        document.querySelectorAll('#photo1-btn').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // Select product details
+                const product = button.closest('div');
+                const image = product.querySelector('img').src;
+                const name = product.querySelector('#photo1-text').textContent;
+                const price = product.querySelector('#photo1-price').textContent;
+    
+                // Save data to localStorage for cart page
+                const cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+                cartData.push({ image, name, price });
+                localStorage.setItem('cartData', JSON.stringify(cartData));
+    
+                // Update cart counter
+                cartCount++;
+                cartCountButton.textContent = cartCount;
+            });
+        });
+        </script>
+    
+</body>
+</html>

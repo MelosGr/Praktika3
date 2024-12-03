@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaMall</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="webimage/logo.png" alt="">
+
+        <div id="search-bar">
+            <input id="search" type="text" placeholder="Search Products">
+            <img id="img-search" src="webimage/search_40dp_B9B5B5_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+        </div>
+
+        <ul class="sidebar">  
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="About-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li id="close" onclick="hideSidebar()"><img src="webimage/close_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></li>
+        </ul>
+
+        <div id="info">
+            <button id="img-info"><img  src="webimage/login_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+
+            <a style="text-decoration: none;" href="cart.html"><img id="img-info" class="icon-cart" src="webimage/shopping_cart_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></a>
+
+            <button  id="img-info"><img onclick="showSidebar()" src="webimage/menu_40dp_F6F2F2_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+        </div>
+    </div>
+
+    <div id="main-page">
+        <img id="menu-icon" src="webimage/visibility_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        <img id="close-icon" src="webimage/visibility_off_24dp_F6F2F2_FILL0_wght400_GRAD0_opsz24.svg" alt="Close Icon">
+
+        <div id="buttons">
+            <a id="a1"  href="#">Deals</a>
+            <a id="a2" href="#">Brands</a>
+            <a id="a3" href="#">New</a>
+            <a id="a4" href="#">Men</a>
+            <a id="a5" href="#">Women</a>
+            <a id="a6" href="#">Kids</a>
+            <a id="a7" href="#">Sneakers</a>
+            <a id="a8" href="#">Shoes</a>
+            <a id="a9" href="#">Apparel</a>
+            <a id="a10" href="#">Accessories</a>
+            <a id="a11" href="#">More Categories</a>
+        </div>
+
+        <p id="main-page-text">Save BIG on This Season's Hottest Items – Limited Time Only! Enjoy Zero Processing Fees on Ten Best-Selling Products.</p>
+
+
+        <div id="photo1">
+            <img id="shoe1" src="webimage/sweatshirt2.avif" alt="">
+            <p id="photo1-text">Fear of God Essentials Hoodie</p>
+            <p id="photo1-price">€62</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo2">
+            <img id="shoe1" src="webimage/glases1.avif" alt="">
+            <p id="photo1-text">Gucci Aviator Sunglasses Havana</p>
+            <p id="photo1-price">€115</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo3">
+            <img id="shoe1" src="webimage/trenerka.avif" alt="">
+            <p id="photo1-text">Nike Sportswear Tech Fleece</p>
+            <p id="photo1-price">€120</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo4">
+            <img id="shoe1" src="webimage/shoe7.avif" alt="">
+            <p id="photo1-text">Converse Chuck Taylor All Star 70</p>
+            <p id="photo1-price">€67</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo5">
+            <img id="shoe1" src="webimage/pillow.avif" alt="">
+            <p id="photo1-text">Nike Sleep With The Swoosh Pillow</p>
+            <p id="photo1-price">€13</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo6">
+            <img id="shoe1" src="webimage/shirt4.avif" alt="">
+            <p id="photo1-text">Yeezy Gap Dove No Seam Tee Black</p>
+            <p id="photo1-price">€39</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo7">
+            <img id="shoe1" src="webimage/boot1.avif" alt="">
+            <p id="photo1-text">Timberland 6" Boot Black Nubuck</p>
+            <p id="photo1-price">€110</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo8">
+            <img id="shoe1" src="webimage/slide1.avif" alt="">
+            <p id="photo1-text">Crocs Pollex Slide by Salehe Bembury</p>
+            <p id="photo1-price">€24</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo9">
+            <img id="shoe1" src="webimage/shoe8.avif" alt="">
+            <p id="photo1-text">Jordan 1 Retro High OG Satin Bred</p>
+            <p id="photo1-price">€61</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo10">
+            <img id="shoe1" src="webimage/shirt5.avif" alt="">
+            <p id="photo1-text">Burberry Icon Stripe Trim Cotton</p>
+            <p id="photo1-price">€100</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+        
+        <!----------------------------------------------------------------------------->
+
+        <hr id="hr">
+
+        <p id="main-page-text2">Yeezy Up To 70% Off Retail</p>
+
+        <div id="photo12">
+            <img id="shoe1" src="webimage/yezzy1.avif" alt="">
+            <p id="photo1-text">adidas Yeezy QNTM Amber Tint</p>
+            <p id="photo1-price">€34</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo13">
+            <img id="shoe1" src="webimage/yezzy2.avif" alt="">
+            <p id="photo1-text">adidas Yeezy Boost 350 V2</p>
+            <p id="photo1-price">€100</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo14">
+            <img id="shoe1" src="webimage/yezzy3.avif" alt="">
+            <p id="photo1-text">adidas Yeezy Boost 700 MNVN</p>
+            <p id="photo1-price">€47</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo15">
+            <img id="shoe1" src="webimage/yezzy4.avif" alt="">
+            <p id="photo1-text">adidas Yeezy Boost 380 Onyx</p>
+            <p id="photo1-price">€56</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo16">
+            <img id="shoe1" src="webimage/yezzy5.avif" alt="">
+            <p id="photo1-text">adidas Yeezy 450 Stone Teal</p>
+            <p id="photo1-price">€55</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo17">
+            <img id="shoe1" src="webimage/yezzy6.avif" alt="">
+            <p id="photo1-text">Yeezy Gap Mock Neck Pullover</p>
+            <p id="photo1-price">€39</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo18">
+            <img id="shoe1" src="webimage/yezzy7.avif" alt="">
+            <p id="photo1-text">Yeezy Gap Dry Bag Black</p>
+            <p id="photo1-price">€68</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo19">
+            <img id="shoe1" src="webimage/yezzy8.avif" alt="">
+            <p id="photo1-text">Yeezy Gap by Balenciaga Denim</p>
+            <p id="photo1-price">€131</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo20">
+            <img id="shoe1" src="webimage/yezzy9.avif" alt="">
+            <p id="photo1-text">Jordan 1 Retro High OG Satin Bred</p>
+            <p id="photo1-price">€70</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo21">
+            <img id="shoe1" src="webimage/yezzy10.avif" alt="">
+            <p id="photo1-text">Yeezy Gap Snake Bag Black</p>
+            <p id="photo1-price">€69</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <!----------------------------------------------------------------------------->
+
+        <hr id="hr2">
+
+        <p id="main-page-text3">Designer Deals Up to 60% Off Retail</p>
+
+        <div id="photo22">
+            <img id="shoe1" src="webimage/dessign1.avif" alt="">
+            <p id="photo1-text">Versace Irregular Biggie Sunglasses</p>
+            <p id="photo1-price">€134</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo23">
+            <img id="shoe1" src="webimage/dessign2.avif" alt="">
+            <p id="photo1-text">Gucci Jumbo GG Wallet Black</p>
+            <p id="photo1-price">€247</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo24">
+            <img id="shoe1" src="webimage/dessign3.avif" alt="">
+            <p id="photo1-text">Off-White Slim Fit T-Shirt </p>
+            <p id="photo1-price">€182</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo25">
+            <img id="shoe1" src="webimage/dessign4.avif" alt="">
+            <p id="photo1-text">OFF-WHITE Industrial Belt</p>
+            <p id="photo1-price">€82</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo26">
+            <img id="shoe1" src="webimage/dessign5.avif" alt="">
+            <p id="photo1-text">Burberry Horseferry Hoodie</p>
+            <p id="photo1-price">€55</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo27">
+            <img id="shoe1" src="webimage/dessign6.avif" alt="">
+            <p id="photo1-text">Alexander McQueen</p><span id="remove-br"><br></span>
+            <p id="photo1-price">€321</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo28">
+            <img id="shoe1" src="webimage/dessign7.avif" alt="">
+            <p id="photo1-text">Gucci Web Slide Black Rubber</p>
+            <p id="photo1-price">€68</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo29">
+            <img id="shoe1" src="webimage/dessign8.avif" alt="">
+            <p id="photo1-text">OFF-WHITE Vulc Low Black White</p>
+            <p id="photo1-price">€186</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo30">
+            <img id="shoe1" src="webimage/dessign9.avif" alt="">
+            <p id="photo1-text">Lanvin Leather Curb White Ivory</p>
+            <p id="photo1-price">€454</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo31">
+            <img id="shoe1" src="webimage/dessign10.avif" alt="">
+            <p id="photo1-text">Common Projects Original Achilles</p>
+            <p id="photo1-price">€69</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <!----------------------------------------------------------------------------->
+
+        <hr id="hr3">
+
+        <p id="main-page-text4">Cozy Season Steals Up to 40% Off Retail</p>
+
+        <div id="photo32">
+            <img id="shoe1" src="webimage/season1.avif" alt="">
+            <p id="photo1-text">North Face Women's Nuptse Short Jacket</p>
+            <p id="photo1-price">€165</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo33">
+            <img id="shoe1" src="webimage/season2.avif" alt="">
+            <p id="photo1-text">Givenchy Ribbed Embroidered Logo Beanie</p>
+            <p id="photo1-price">€133</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo34">
+            <img id="shoe1" src="webimage/season3.avif" alt="">
+            <p id="photo1-text">North Face 1996 Retro Nuptse 700 Jacket</p>
+            <p id="photo1-price">€221</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo35">
+            <img id="shoe1" src="webimage/season4.avif" alt="">
+            <p id="photo1-text">Gucci Wool Logo Scarf Zinc/Blue</p> <br>
+            <p id="photo1-price">€218</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo36">
+            <img id="shoe1" src="webimage/handbag1.avif" alt="">
+            <p id="photo1-text">Telfar x UGG Shopping Bag Medium </p>
+            <p id="photo1-price">€241</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo37">
+            <img id="shoe1" src="webimage/season5.avif" alt="">
+            <p id="photo1-text">Alexander McQueen</p><br>
+            <p id="photo1-price">€321</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo38">
+            <img id="shoe1" src="webimage/season6.avif" alt="">
+            <p id="photo1-text">Timberland 6" Premium Waterproof Boot</p>
+            <p id="photo1-price">€125</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+       <div id="photo39">
+            <img id="shoe1" src="webimage/season7.avif" alt="">
+            <p id="photo1-text">North Face Thermoball Traction Mule V</p>
+            <p id="photo1-price">€186</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo40">
+            <img id="shoe1" src="webimage/season8.avif" alt="">
+            <p id="photo1-text">Timberland 6" Boot Black Nubuck Premium</p>
+            <p id="photo1-price">€110</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div>
+
+        <div id="photo41">
+            <img id="shoe1" src="webimage/season9.avif" alt="">
+            <p id="photo1-text">UGG Disquette Slipper Chestnut</p> <span id="hide-br"><br></span>
+            <p id="photo1-price">€67</p>
+            <button id="photo1-btn">Add to cart</button>
+        </div> 
+       
+    </div>
+
+    <div id="footer">
+        <p id="footer-text1">NovaMall: Your Gateway to the Future of Shopping!</p>
+
+        <div id="footer-section1">
+            <P id="footer-section1-p1">About</P>
+
+            <P id="footer-section1-p2">How It Works</P>
+            <P id="footer-section1-p2">Verification</P>
+            <P id="footer-section1-p2">Newsroom</P>
+            <P id="footer-section1-p2">Company</P>
+            <P id="footer-section1-p2">Careers</P>
+            <P id="footer-section1-p2">NovaMall Reviews</P>
+        </div>
+
+        <div id="footer-section2">
+            <P id="footer-section1-p1">Help</P>
+
+            <P id="footer-section1-p2">Help Center</P>
+            <P id="footer-section1-p2">Contact US</P>
+            <P id="footer-section1-p2">Product Suggestion</P>
+            <P id="footer-section1-p2">Sizes</P>
+        </div>
+
+        <div id="footer-section3">
+            <P id="footer-section1-p1">Sell</P>
+
+            <P id="footer-section1-p2">Selling Guide</P>
+            <P id="footer-section1-p2">Profesional Tools</P>
+            <P id="footer-section1-p2">NovaMall Pro</P>
+            <P id="footer-section1-p2">Locations</P>
+        </div>
+
+        <div id="footer-section4">
+            <P id="footer-section1-p1">Air Jordan</P>
+
+            <P id="footer-section1-p2">Air Jordan 1</P>
+            <P id="footer-section1-p2">Air Jordan 3</P>
+            <P id="footer-section1-p2">Air Jordan 4</P>
+            <P id="footer-section1-p2">Air Jordan 11</P>
+            <P id="footer-section1-p2">Women's Jordan Shoes</P>
+            <P id="footer-section1-p2">Air Jordan 5</P>
+        </div>
+
+
+        <div id="footer-section5">
+            <P id="footer-section1-p1">Adidas</P>
+
+            <P id="footer-section1-p2">Adidas Samba</P>
+            <P id="footer-section1-p2">Adidas Campus</P>
+            <P id="footer-section1-p2">Adidas Gazelle</P>
+            <P id="footer-section1-p2">Adidas Yeezy</P>
+        </div> 
+
+
+        <div id="footer-section6">
+            <P id="footer-section1-p1">New Balance</P>
+
+            <P id="footer-section1-p2">New Balance 2002R</P>
+            <P id="footer-section1-p2">New Balance 1906R</P>
+            <P id="footer-section1-p2">New Balance 530</P>
+            <P id="footer-section1-p2">New Balance 550</P>
+            <P id="footer-section1-p2">New Balance 9060</P>
+            <P id="footer-section1-p2">New Balance 990 V1</P>
+        </div>
+
+        <!------------------------------------------------------>
+
+        <div id="footer-section7">
+            <P id="footer-section1-p1">Nike</P>
+
+            <P id="footer-section1-p2">Nike Air Force 1</P>
+            <P id="footer-section1-p2">Nike Air Max 1</P>
+            <P id="footer-section1-p2">Nike Dunk</P>
+            <P id="footer-section1-p2">Nike SB</P>
+            <P id="footer-section1-p2">Womens's Nike Dunk</P>
+            <P id="footer-section1-p2">Nike Vomero 5</P>
+        </div>
+
+
+        <div id="footer-section8">
+            <P id="footer-section1-p1">Crocs</P>
+
+            <P id="footer-section1-p2">Classic Clog</P>
+            <P id="footer-section1-p2">Classic Cozzy</P>
+            <P id="footer-section1-p2">Echo Clog</P>
+            <P id="footer-section1-p2">Mega Crush</P>
+            <P id="footer-section1-p2">Pollex Clog</P>
+            <P id="footer-section1-p2">Pollex Slide</P>
+        </div>
+
+
+        <div id="footer-section9">
+            <P id="footer-section1-p1">Appareal</P>
+
+            <P id="footer-section1-p2">Denim Tears</P>
+            <P id="footer-section1-p2">Fear of God Essentials</P>
+            <P id="footer-section1-p2">Nike Apparel</P>
+            <P id="footer-section1-p2">Supreme</P>
+            <P id="footer-section1-p2">Travis Scott</P>
+            <P id="footer-section1-p2">Yeezy</P>
+        </div>
+
+        <div id="footer-section10">
+            <P id="footer-section1-p1">Accessories</P>
+
+            <P id="footer-section1-p2">Swatch X Omega</P>
+            <P id="footer-section1-p2">Stanley</P>
+            <P id="footer-section1-p2">Designer Sunglasses</P>
+            <P id="footer-section1-p2">Louis Vuitton Accessories</P>
+            <P id="footer-section1-p2">Gucci Accessories</P>
+        </div>
+
+        <img id="download" src="webimage/download.png" alt="">
+
+        <button id="footer-button1">Kosovo  |  English  |  € EUR</button>
+        
+        <p id="footer-rights">© 2024 NovaMall. All rights reserved. <br>
+            Unauthorized duplication, or use of any content from this website is strictly prohibited.</p>
+
+        <a href="https://instagram.com/"><p id="social-media-p1"><i class="fab fa-instagram"></i></p></a>
+        <a href="https://www.facebook.com/"><p id="social-media-p2"><i class="fab fa-facebook"></i></p></a>
+        <a href="https://twitter.com/?lang=en"><p id="social-media-p3"><i class="fab fa-twitter"></i></p></a>
+        <a href="https://www.linkedin.com/"><p id="social-media-p4"><i class="fab fa-linkedin"></i></p></a>
+    </div>  
+        
+        
+
+
+    <script>
+    function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
+        // Function to show the sidebar
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+
+
+        document.getElementById('menu-icon').addEventListener('click', function () {
+        const buttonsDiv = document.getElementById('buttons');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        buttonsDiv.style.display = 'flex'; // Show the #buttons div
+        menuIcon.style.display = 'none';  // Hide the menu icon
+        closeIcon.style.display = 'block'; // Show the close icon
+        });
+
+        document.getElementById('close-icon').addEventListener('click', function () {
+        const buttonsDiv = document.getElementById('buttons');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        buttonsDiv.style.display = 'none'; // Hide the #buttons div
+        menuIcon.style.display = 'block'; // Show the menu icon
+        closeIcon.style.display = 'none';  // Hide the close icon
+        });
+
+
+
+        const cartCountButton = document.querySelector('#info-btn');
+let cartCount = 0;
+
+document.querySelectorAll('#photo1-btn').forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Select product details
+        const product = button.closest('div');
+        const image = product.querySelector('img').src;
+        const name = product.querySelector('#photo1-text').textContent;
+        const price = product.querySelector('#photo1-price').textContent;
+
+        // Load cart data from localStorage
+        const cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+
+        // Check if the product already exists in the cart
+        const existingProductIndex = cartData.findIndex(item => item.name === name);
+
+        if (existingProductIndex !== -1) {
+            // If product exists, increment the quantity
+            cartData[existingProductIndex].quantity++;
+        } else {
+            // If product does not exist, add it with a quantity of 1
+            cartData.push({ image, name, price, quantity: 1 });
+        }
+
+        // Save updated cart data to localStorage
+        localStorage.setItem('cartData', JSON.stringify(cartData));
+
+        // Update cart counter (total number of items in the cart)
+        cartCount = cartData.reduce((total, item) => total + item.quantity, 0);
+        cartCountButton.textContent = cartCount;
+    });
+});
+    </script>
+    
+</body>
+</html>
